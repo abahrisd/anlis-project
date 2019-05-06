@@ -18,6 +18,11 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('htaccess', function() {
+    return gulp.src('.htaccess')
+        .pipe(gulp.dest('dist'));
+});
+
 gulp.task('styles', function () {
     return gulp.src([
             './assets/css/font-awesome.min.css',
@@ -68,5 +73,5 @@ gulp.task('scripts', function () {
 
 // Default task
 gulp.task('default', function (done) {
-    gulp.series('scripts', 'styles', 'images', 'fonts')(() => done());
+    gulp.series('scripts', 'styles', 'images', 'fonts', 'htaccess')(() => done());
 });
