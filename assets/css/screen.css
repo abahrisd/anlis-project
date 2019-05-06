@@ -1257,7 +1257,8 @@ footer .widget .widget-title {
 /* ----------------- Widgets ----------------- */
 .widget.widget_contact .contact-info li {
   position: relative;
-  padding: 0 0 14px 37%;
+  padding: 0 0 14px 35%;
+  /*padding: 0 0 14px 37%;*/
   margin: 0 0 15px;
   border-bottom: 1px solid #45474c;
 }

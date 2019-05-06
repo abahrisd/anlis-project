@@ -459,8 +459,9 @@
 
             $('.hero-section .scroll').on('click', function () {
                 var index = $(this).closest('.hero-section').index();
-                $("body").animate({
-                    scrollTop: $('.content-wrapper').find('section').eq(index + 1).offset().top
+                $("html, body").animate({
+                    scrollTop: $('.content-wrapper').find('.features-section').offset().top
+                    //scrollTop: $('.content-wrapper').find('section').eq(index + 1).offset().top
                 }, 900);
             });
 

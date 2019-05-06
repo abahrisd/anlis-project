@@ -39,6 +39,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([
+            './assets/js/jquery-3.4.1.min.js',
             './assets/js/modernizr.js',
             './assets/js/nouislider.js',
             './assets/rs-plugin/js/jquery.themepunch.tools.min.js',
